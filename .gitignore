@@ -1,0 +1,18 @@
+node_modules
+dist
+.smoke.cjs
+.DS_Store
+
+# Local secrets and machine-specific configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.crt
+*.cer
+*.p12
+*.pfx
+*.token
+*.credentials
+*.local.json

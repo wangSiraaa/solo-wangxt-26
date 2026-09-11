@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <title>自定义下拉（导入样例）</title>
+</head>
+<body>
+  <main class="panel">
+    <h1>选择套餐</h1>
+
+    <!--
+      这是一个“无脚本”的静态案例，审查台不会执行其中任何 JS。
+      植入的可审查点：
+      - 触发器是 div，键盘完全无法操作（键盘可达性）
+      - 触发器没有可访问名称与 aria-expanded
+      - 列表用 div 而非 listbox/option 语义
+      - 下方帮助链接被固定悬浮条遮挡
+    -->
+    <div class="field">
+      <span class="label">套餐</span>
+      <div id="comboTrigger" class="combo" tabindex="0">
+        请选择 <span class="caret">▾</span>
+      </div>
+      <div id="comboList" class="combo-list">
+        <div class="option" tabindex="0">免费版</div>
+        <div class="option" tabindex="0">专业版</div>
+        <div class="option" tabindex="0">企业版</div>
+      </div>
+    </div>
+
+    <p class="help">
+      需要帮助？<a id="helpLink" href="#terms">查看套餐对比说明</a>
+    </p>
+  </main>
+
+  <div class="dock" aria-hidden="true">
+    限时活动：新用户首月 1 折 · 联系销售
+  </div>
+</body>
+</html>

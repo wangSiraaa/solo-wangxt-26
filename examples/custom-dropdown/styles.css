@@ -1,0 +1,56 @@
+body {
+  font-family: system-ui, sans-serif;
+  background: #f8fafc;
+  margin: 0;
+  padding: 40px;
+  color: #0f172a;
+}
+.panel {
+  max-width: 480px;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 28px;
+}
+h1 { font-size: 20px; margin: 0 0 18px; }
+.field { display: flex; flex-direction: column; gap: 8px; }
+.label { font-size: 14px; color: #475569; }
+.combo {
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  padding: 10px 12px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.combo:focus {
+  outline: none; /* 焦点指示器被移除 */
+  border-color: #94a3b8;
+}
+.caret { color: #64748b; }
+.combo-list {
+  margin-top: 6px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.option {
+  padding: 9px 12px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.option:hover { background: #f1f5f9; }
+.help { margin-top: 20px; font-size: 13px; color: #64748b; }
+.help a { color: #1d4ed8; }
+
+/* 固定悬浮条：遮住底部帮助链接的焦点 */
+.dock {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #0f172a;
+  color: #fff;
+  font-size: 13px;
+  padding: 14px 24px;
+}
